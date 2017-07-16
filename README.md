@@ -33,7 +33,9 @@ Wenn alles nach obigem Bild verdrahtet wurde, kann das Image ```WemosD1_ioBroker
 - angelegte ObjektIDs je nach Anzahl der angeschlossenen Sensoren
   - Beispiel: Bei 3 angeschlossenen DS18B20-Sensoren müssen die Objekt IDs im Format angelegt werden: 
       objekt.id.1
+      
       objekt.id.2
+      
       objekt.id.3
 
 ## Konfiguration des Wemos D1
