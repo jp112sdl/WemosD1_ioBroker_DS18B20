@@ -2,7 +2,7 @@
 
 ## Folgende Bauteile werden benötigt:
 - Wemos D1 Mini
-- DS18B20 Sensor
+- DS18B20 Sensor(en)
 - 1 Taster (nicht dauerhaft, nur um bei erster Inbetriebnahme / Änderungen den Konfigurationsmodus zu starten)
 - Stromversorgung (z.B. ein Batteriehalter mit 3x AA Batterien)
 
@@ -31,6 +31,10 @@ Wenn alles nach obigem Bild verdrahtet wurde, kann das Image ```WemosD1_ioBroker
 ## Voraussetzungen: 
 - installierter simpleAPI Adapter in ioBroker
 - angelegte ObjektIDs je nach Anzahl der angeschlossenen Sensoren
+  - Beispiel: Bei 3 angeschlossenen DS18B20-Sensoren müssen die Objekt IDs im Format angelegt werden: 
+      objekt.id.1
+      objekt.id.2
+      objekt.id.3
 
 ## Konfiguration des Wemos D1
 Um den Konfigurationsmodus zu starten, muss der Wemos D1 mit gedrückt gehaltenem Taster gestartet werden.
