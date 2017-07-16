@@ -1,4 +1,4 @@
-# Wemos D1 als ioBroker Temperatursensor  
+# Wemos D1 mit DS18B20 als ioBroker Temperatursensor  
 
 ## Folgende Bauteile werden benötigt:
 - Wemos D1 Mini
