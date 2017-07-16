@@ -26,7 +26,7 @@ Wenn alles nach obigem Bild verdrahtet wurde, kann das Image ```WemosD1_ioBroker
 3. Bezeichnung des neuen COM-Ports im Gerätemanager notieren (z.B. COM5)
 4. Flash-Vorgang durchführen: 
 
-  ```esptool.exe -vv -cd nodemcu -cb 921600 -cp COM5 -ca 0x00000 -cf WemosD1_HomeMatic_WiFiSensor.ino.d1_mini.bin```
+  ```esptool.exe -vv -cd nodemcu -cb 921600 -cp COM5 -ca 0x00000 -cf WemosD1_ioBroker_DS18B20.ino.d1_mini.bin```
 
 ## Voraussetzungen: 
 - installierter simpleAPI Adapter in ioBroker
