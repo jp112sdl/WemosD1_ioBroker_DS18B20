@@ -3,6 +3,7 @@
 ## Folgende Bauteile werden benötigt:
 - Wemos D1 Mini
 - DS18B20 Sensor(en)
+- 1 4k7 Widerstand
 - 1 Taster (nicht dauerhaft, nur um bei erster Inbetriebnahme / Änderungen den Konfigurationsmodus zu starten)
 - Stromversorgung (z.B. ein Batteriehalter mit 3x AA Batterien)
 
