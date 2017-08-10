@@ -68,7 +68,7 @@ void setup() {
     for (int i = 0; i < sensorCount; i++) {
       float t = DS18B20Sensors.getTempCByIndex(i);
       printSerial("Setze ioBroker-Wert Temperatur Sensor(" + String(i+1) + ") = " + String(t));
-      setStateIoBroker("SET_TEMPERATURE", String(DS18B20Sensors.getTempCByIndex(0)), i+1);
+      setStateIoBroker("SET_TEMPERATURE", String(DS18B20Sensors.getTempCByIndex(i)), i+1);
     }
   } else ESP.restart();
   delay(100);
