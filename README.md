@@ -1,8 +1,9 @@
-# Wemos D1 als ioBroker Temperatursensor  
+# Wemos D1 mit DS18B20 als ioBroker Temperatursensor  
 
 ## Folgende Bauteile werden benötigt:
 - Wemos D1 Mini
-- DS18B20 Sensor
+- DS18B20 Sensor(en)
+- 1 4k7 Widerstand
 - 1 Taster (nicht dauerhaft, nur um bei erster Inbetriebnahme / Änderungen den Konfigurationsmodus zu starten)
 - Stromversorgung (z.B. ein Batteriehalter mit 3x AA Batterien)
 
@@ -19,18 +20,22 @@ Wenn alles nach obigem Bild verdrahtet wurde, kann das Image ```WemosD1_ioBroker
 #### Vorgehensweise:
 1. Voraussetzungen:
   - CH340-Treiber installieren
-  - esptool 
-    - für [Windows](https://github.com/thekikz/esptool/blob/master/esptool.exe) herunterladen
-    - oder plattformunabhängig das Python Package [esptool](https://pypi.python.org/pypi/esptool/)
+  - [esptool](https://github.com/igrr/esptool-ck/releases) herunterladen
 2. WemosD1 mit einem microUSB-Kabel an den PC anschließen
 3. Bezeichnung des neuen COM-Ports im Gerätemanager notieren (z.B. COM5)
 4. Flash-Vorgang durchführen: 
 
-  ```esptool.exe -vv -cd nodemcu -cb 921600 -cp COM5 -ca 0x00000 -cf WemosD1_HomeMatic_WiFiSensor.ino.d1_mini.bin```
+  ```esptool.exe -vv -cd nodemcu -cb 921600 -cp COM5 -ca 0x00000 -cf WemosD1_ioBroker_DS18B20.ino.d1_mini.bin```
 
 ## Voraussetzungen: 
 - installierter simpleAPI Adapter in ioBroker
 - angelegte ObjektIDs je nach Anzahl der angeschlossenen Sensoren
+  - Beispiel: Bei 3 angeschlossenen DS18B20-Sensoren müssen die Objekt IDs im Format angelegt werden: 
+      objekt.id.1
+      
+      objekt.id.2
+      
+      objekt.id.3
 
 ## Konfiguration des Wemos D1
 Um den Konfigurationsmodus zu starten, muss der Wemos D1 mit gedrückt gehaltenem Taster gestartet werden.
