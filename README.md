@@ -65,11 +65,18 @@ Geschieht dies nicht nach ein paar Sekunden, ist im Browser die Seite http://192
 
 **simpleApi Port**: meist 8087
 
+**ioBroker Objekt ID**: der komplette Pfad zum Datenpunkt, ohne die lfd. Nr.<br><br>
+Beispiel: 3 angeschlossene Sensoren<br>
+Es wurden 3 Datenpunkte `ds18b20.sensor`unter `javascript.0` angelegt.<br>
+javascript.0.ds18b20.sensor.1<br>
+javascript.0.ds18b20.sensor.2<br>
+javascript.0.ds18b20.sensor.3<br>
+dann ist als ioBroker Objekt ID nur `javascript.0.ds18b20.sensor` einzutragen
+
 **Übertragung alle x Minuten**: Sende-Intervall. Zwischen den Übertragungen verbleibt der Wemos D1 im DeepSleep Modus, um Energie zu sparen. Je größer die Sendeabstände, desto länger ist die Lebensdauer der Batterien
 
 ![KonfigurationBeispiel](Images/Konfiguration_Beispiel.png)
 
-**Beispiel**
 
 #### Nach dem "Speichern" startet der Wemos neu und es findet eine Übertragung der Werte an ioBroker statt.
 
