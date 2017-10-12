@@ -29,7 +29,7 @@ Wenn alles nach obigem Bild verdrahtet wurde, kann das Image ```WemosD1_ioBroker
 
 ## Voraussetzungen: 
 - installierter simpleAPI Adapter in ioBroker
-- angelegte ObjektIDs je nach Anzahl der angeschlossenen Sensoren
+- angelegte ObjektIDs (Datenpunkt, Typ Zahl) je nach Anzahl der angeschlossenen Sensoren
   - Beispiel: Bei 3 angeschlossenen DS18B20-Sensoren müssen die Objekt IDs im Format angelegt werden:<br>
       objekt.id.1
       
